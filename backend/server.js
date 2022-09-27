@@ -3,7 +3,8 @@ const app = express();
 const dotenv = require('dotenv').config()
 const colors = require('colors');
 const connectDB = require('./config/db');
-
+var cors = require('cors');
+app.use(cors());
 connectDB();
 
 // Admin CMS sched & time
