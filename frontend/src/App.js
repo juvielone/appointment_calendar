@@ -1,10 +1,24 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import SchedForm from './components/SchedForm';
 
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
+    <>
+      <Router>
+
+
+        <div className='container'>
+          <Routes>
+            <Route path='/' element={<SchedForm />} />
+          </Routes>
+        </div>
+
+
+
+
+      </Router>
+    </>
   );
 }
 
